@@ -1,1 +1,1 @@
-# cypress-cucumber-automation
+# cypress-automation-framework
