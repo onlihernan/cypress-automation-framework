@@ -34,7 +34,7 @@ When("I type a specific first name {string}", (firstName) => {
 })
 
 When("I type a specific last name {string}", (lastName) => {
-    cy.get('[name="last_name"]').type(lastName);
+    cy.get('[name="last_name"]').type(lastName); 
 })
 
 When("I enter a specific email address {string}", (email) => {
