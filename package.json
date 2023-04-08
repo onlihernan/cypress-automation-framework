@@ -14,11 +14,7 @@
     "cypress": "^12.6.0",
     "ts-loader": "^9.4.2"
   },
-<<<<<<< HEAD
   "cypress-cucumber-preprocessor": {
-=======
-  "cypres-cucumber-preprocessor": {
->>>>>>> 8e7968c4891483f5e00b561af48b1f0cf2de5fe6
     "stepDefinitions": "cypress/support/step_definitions/**/*.js"
   }
 }
