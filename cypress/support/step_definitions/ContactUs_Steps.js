@@ -28,3 +28,19 @@ Then("I should be presented with a successful contact us submission message", ()
 Then("I should be presented with a unsuccessful contact us submission message", () => {
     cy.get('body').contains("Error: Invalid email address");
 })
+
+When("I type a specific first name {string}", (firstName) => {
+    cy.get('[name="first_name"]').type(firstName);
+})
+
+When("I type a specific last name {string}", (lastName) => {
+    cy.get('[name="last_name"]').type(lastName);
+})
+
+When("I enter a specific email address {string}", (email) => {
+    cy.get('[name="email"]').type(email); 
+})
+
+When("I type a specific word {string} and number {int} within the comment input field", (word, number) => {
+    cy.get('textarea[name="message"]').type(word + number);
+})
