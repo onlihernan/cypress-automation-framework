@@ -38,7 +38,7 @@ Feature: WebdriverUniversity - Contact Us Page
         Then I should be presented with header text '<message>'
 
         Examples:
-            | firstName | lastName | emailAddress         | comment                 |
+            | firstName | lastName | emailAddress         | comment                 | message                     |  
             | John      | Jones    | john_jones@email.com | Hello                   | Thank you for your message! |
             | Mia       | Carter   | mia_carter@email.com | Test123                 | Thank you for your message! |
             | Grace     | Hudson   | grace_hudson         | Do you create websites? | Error: Invalid email address |
