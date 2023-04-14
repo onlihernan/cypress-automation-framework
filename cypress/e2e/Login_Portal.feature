@@ -1,17 +1,14 @@
 Feature: webdriverUniversity - Login Portal
 
-Scenario: Valid Login Portal submission
-        Given I navigate to the webdriveruniversity homepage
-        When I click on the Login Portal button
-        And I type a Username
-        And I type a Password
-        And I click on the Login button
-        Then I should be presented with a validation succeeded message
+        Scenario Outline: Validate valid and invalid login credentials
+                Given I navigate to the webdriveruniversity homepage
+                When I click on the Login Portal button
+                And I type a Username <username> 
+                And I type a Password <password>
+                And I click on the login button
+                Then I should be presented with an alert box which contains text '<expectedAlertText>'
 
-        Scenario: Invalid Login Portal submission
-        Given I navigate to the webdriveruniversity homepage
-        When I click on the Login Portal button
-        And I type a Username
-        And I type a Password
-        And I click on the Login button
-        Then I should be presented with a validation failed message
+                Examples:
+                        | username  | password     | expectedAlertText    |
+                        | webdriver | webdriver123 | validation succeeded |
+                        | webdriver | 12345678     | validation failed    |
