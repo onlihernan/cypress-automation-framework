@@ -48,7 +48,9 @@ NOTA3: con and not podemos excluir los TAGS que queramos
 -->
 
 <!-- 
-HTML REPORTS 
+HTML REPORTS:
+MUY IMPORATNTE ESTOS REPORTES SE SOBREESCRIBEN
+
 en package.json "cypress-cucumber-preprocessor" colocamos lo siguiente:
     "html": {
       "enabled": true,
@@ -66,5 +68,16 @@ locacion colocamos en package.json lo siguiente:
       "output": "cypress/reports/cucumber-ndjson/cucumber-report.ndjson"
       }
 NOTA: los reportes se sobreescriben
+
+JSON REPORTS:
+son utiles para crear reportes avanzados con jenkins y otros programas.
+seguir pasos de instalacion en internet ya que es bastante complicado
+
+agregar en package.json lo siguiente:
+"json": {
+        "enabled": true,
+        "formatter": "cucumber-json-formatter",
+        "output": "cypress/reports/cucumber-json/cucumber-report.json"
+      }
  -->
 
