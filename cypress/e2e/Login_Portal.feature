@@ -1,3 +1,4 @@
+@login-portal @regression
 Feature: webdriverUniversity - Login Portal
 
         Scenario Outline: Validate valid and invalid login credentials
