@@ -79,5 +79,12 @@ agregar en package.json lo siguiente:
         "formatter": "cucumber-json-formatter",
         "output": "cypress/reports/cucumber-json/cucumber-report.json"
       }
+
+MULTIPLE CUCUMBER HTML REPORTS:
+ver proceso de instalacion en internet.
+se ejecuta con la terminal node cucumber-html-report.js (y el nombre de la ruta que hayamos creado) 
+
+REPORTS ATTACHING SCREENSHOTS: (solo para errores)
+no es necesario instalar, pero si correr node cucumber-html-report.js
  -->
 
