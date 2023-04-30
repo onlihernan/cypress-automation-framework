@@ -1,8 +1,8 @@
 @login-portal @regression
 Feature: webdriverUniversity - Login Portal
 
-        Background: Pre-condition
-                When I wait for 5 seconds
+        # Background: Pre-condition
+        #         When I wait for 5 seconds
 
         Scenario Outline: Validate valid and invalid login credentials
                 Given I navigate to the webdriveruniversity homepage

@@ -116,6 +116,7 @@ locacion comun o central.
 
 creamos un archivo "Base_PO.js" en la carpeta de /step_definitions.
 dentro usamos "class" la simplificacion de visitas a la pagina
+  siempre que creemos un class debajo del } vamos a poner export default y el nombre de la clase 
 
 tambien podemos crear un archivo ""config.js" en /fixtures para nombrar todas
 las url que queramos sin tener que llamarlas desde la funcion que queramos. Una
@@ -125,6 +126,25 @@ vez creado el archivo en fixture podemos usar otra nomenclatura mas general aun
 podemos borrar el archivo example.json para tener un trabajo mas limpio
 
 nota: reemplazamos home page steps por los nuevos comandos
+
+
+SUB-PAGES:
+Esto se utiliza para que si en algun momento se actualiza por ej el nombre de la
+direccion del (selector) ID #contact_us por nombrar uno, no tengamos que cambiar en todos los
+archivos donde se haga mencion, entonces solamente deberiamos cambiarlo una vez en
+/Homepage_PO.js
+
+vamos a mejorar click on contact us button y click on login portal /homepage.steps.js
+creamos una nueva carpeta en page-objects /Homepage_PO.js
+
+aqui podemos traer metodos ya creados por ej.
+class Homepage_PO extends Base_PO{ -> usando extends lo importa automaticamente
+
+mejoramos el metodo de clickear en contactus y loginportal buttons
+
+nota: recordar importar el archivo page-object a utilizar en los archivos de 
+/steps_definitions e inicializarlo con "const name = new nombre del archivo();"
+
 
 
 
