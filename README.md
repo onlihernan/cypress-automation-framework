@@ -85,6 +85,48 @@ ver proceso de instalacion en internet.
 se ejecuta con la terminal node cucumber-html-report.js (y el nombre de la ruta que hayamos creado) 
 
 REPORTS ATTACHING SCREENSHOTS: (solo para errores)
-no es necesario instalar, pero si correr node cucumber-html-report.js
+no es necesario instalar, pero si correr manualmente node cucumber-html-report.js
+
+REPORTS ATTACHING SCREENSHOTS (AUTOMATED)
+podemos automatizar el reporte anterior con && ver sig. ejemplo:
+"contact-us-tests-headed": "cypress run -e TAGS=\"@contact-us\" --headed && node cucumber-html-report.js"
+
+HOOKS AND BASE STEPS:
+Hooks localizadas dentro de la Base_Steps.js se usan para ejecutar antes o despues 
+de un Scenario con las palabras reservadas Before y After. Se puede asignarles a 
+uno o mas tags. podemos colocarlos dentro de un archivo nuevo como el mencionado o 
+podemos colocarlo directamente dentro de un step definition deseado. el mejor modo
+es creando uno nuevo.
+
+Centralizar logicas especificas en el archivo "Base_Steps.js":
+utilizando When por ej. podemos pedirle que espere x segundos antes de ejecutarse
+las pruebas, colocando "Background" en "Login_Portal.features" debajo de "Feature"
+para que se ejecute antes que cualquier Scenario.
+
+CUSTOMS COMMANDS:
+podemos reutilizar comandos tales como el click + que se abra en la misma ventana,
+en el archivo "commands"(chequear para ref.) agregamos una linea indicando "selector" como parametro
+para luego llamarlo desde el archivo de Steps y en lugar de hacer una funcion para
+cada click que debamos hacer podamos reutilizar dicha funcion.
+
+PAGE OBJECT MODELLING (POB):
+hace que un framework sea facil de mantener
+tambien crea una forma de abstraccion, centralizando logicas comunes en una 
+locacion comun o central.
+
+creamos un archivo "Base_PO.js" en la carpeta de /step_definitions.
+dentro usamos "class" la simplificacion de visitas a la pagina
+
+tambien podemos crear un archivo ""config.js" en /fixtures para nombrar todas
+las url que queramos sin tener que llamarlas desde la funcion que queramos. Una
+vez creado el archivo en fixture podemos usar otra nomenclatura mas general aun 
+(para ref. chequear /Base_PO y /config.json )
+
+podemos borrar el archivo example.json para tener un trabajo mas limpio
+
+nota: reemplazamos home page steps por los nuevos comandos
+
+
+
  -->
 

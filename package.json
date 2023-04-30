@@ -9,7 +9,8 @@
     "full-regression-headless-chrome": "cypress run --browser chrome --spec 'cypress/e2e/*.feature'",
     "contact-us-tests-headed-chrome": "cypress run --headed --browser chrome --spec 'cypress/e2e/Contact_Us.feature'",
     "contact-us-tests-headed": "cypress run -e TAGS=\"@contact-us\" --headed",
-    "contact-us-tests-headless-chrome": "cypress run --browser chrome --spec 'cypress/e2e/Contact_Us.feature'"
+    "contact-us-tests-headless-chrome": "cypress run --browser chrome --spec 'cypress/e2e/Contact_Us.feature'",
+    "contact-us-tests-headed-automated": "cypress run -e TAGS=\"@contact-us\" --headed && node cucumber-html-report.js"
   },
   "author": "onlihernan",
   "license": "ISC",
