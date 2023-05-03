@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 import { Before, Given, When } from "@badeball/cypress-cucumber-preprocessor";
-import Base_PO from "../page-objects/Base_PO";
-import Homepage_PO from "../page-objects/Homepage_PO";
+// import Base_PO from "../page_objects/Base_PO";
+import Homepage_PO from "../page_objects/Homepage_PO";
 
 // const url = "https://www.webdriveruniversity.com/";
 
