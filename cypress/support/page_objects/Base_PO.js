@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 class Base_PO {
-    baseUrl = "https://www.webdriveruniversity.com/";
+    // baseUrl = "https://www.webdriveruniversity.com/";
 
     navigate(path) {                            //navigate is common logic (method)
         // cy.visit(baseUrl + path); ///path is the extension of the url i.e. "/Contact-Us/contactus.html"
