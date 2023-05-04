@@ -27,5 +27,5 @@ When("I click on the contact us button", () => {
 When("I click on the Login Portal button", () => {
     // cy.get("#login-portal").invoke("removeAttr", "target").click();
     // cy.clickAndOpenLink_InSameTab("#login-portal");
-    homePage.clickOn_LoginPortal_Button();
+    homePage.clickOn_Login_Button();
 })

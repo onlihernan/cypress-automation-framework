@@ -10,7 +10,7 @@ class Homepage_PO extends Base_PO {
   clickOn_ContactUs_Button() {
     cy.clickAndOpenLink_InSameTab("#contact-us");
   }
-  clickOn_LoginPortal_Button() {
+  clickOn_Login_Button() {
     cy.clickAndOpenLink_InSameTab("#login-portal");
   }
 }
